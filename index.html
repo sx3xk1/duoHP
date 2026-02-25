@@ -138,6 +138,16 @@
                 0 0 15px rgba(34, 211, 238, 0.4),
                 0 0 20px rgba(59, 130, 246, 0.3);
         }
+
+        /* スマホ画面でのみ背景ロゴ画像の位置を調整 */
+        .bg-logo-mobile {
+            position: relative;
+        }
+        @media (max-width: 767px) {
+            .bg-logo-mobile {
+                top: -2rem;
+            }
+        }
     </style>
 </head>
 <body class="bg-cyber">
@@ -190,7 +200,7 @@
 
     <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
         <div class="absolute inset-0 flex items-center justify-center select-none pointer-events-none z-0">
-            <img src="images/rogo2.png" alt="Background Logo" class="w-auto h-auto max-w-[80vw] max-h-[80vh] object-contain opacity-[0.02] blur-[0.5px]" data-aos="zoom-out" data-aos-duration="2000">
+            <img src="images/rogo2.png" alt="Background Logo" class="bg-logo-mobile w-auto h-auto max-w-[80vw] max-h-[80vh] object-contain opacity-[0.02] blur-[0.5px]" data-aos="zoom-out" data-aos-duration="2000">
         </div>
         <div class="relative z-10 text-center px-6" data-aos="fade-up" data-aos-duration="1500">
             <h1 id="hero-title" class="text-5xl md:text-[10rem] font-black font-orbitron mb-4 leading-none tracking-tighter uppercase">
